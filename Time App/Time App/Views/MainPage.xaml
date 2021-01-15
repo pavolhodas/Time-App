@@ -4,7 +4,8 @@
              x:Class="Time_App.MainPage">
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Button Text="{Binding DateTime, StringFormat='{0:T}'}" x:Name="lblTime" FontSize="Large"></Button>
+        <Label Text="{Binding LabelText}" FontSize="Title"></Label>
+        <Button Text="{Binding DateTime, StringFormat='{0:T}'}" Command="{Binding ButtonClickedCommand}" FontSize="Large"></Button>
     </StackLayout>
 
 </ContentPage>
