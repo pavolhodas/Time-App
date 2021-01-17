@@ -1,6 +1,12 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Windows.Input;
 using Xamarin.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Time_App.ViewModels
 {
@@ -12,7 +18,7 @@ namespace Time_App.ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
 
 
-        private string _labelText = "Hello";
+        private string _labelText = "Presný čas";
         public string LabelText
         {
             get => _labelText;
@@ -21,11 +27,11 @@ namespace Time_App.ViewModels
                 _labelText = value;
                 PropertyChanged?
                 .Invoke(this, new PropertyChangedEventArgs(nameof(LabelText)));
-            }
+                }
         }
         public Command ButtonClickedCommand => new Command(() =>
         {
-            LabelText = "Miro Žbirka";
+            LabelText = "Sklovensko";
         });
 
         public MainViewModels()
@@ -58,5 +64,7 @@ namespace Time_App.ViewModels
                 return dateTime;
             }
         }
+
+        
     }
 }

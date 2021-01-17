@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,17 +9,13 @@ using Xamarin.Forms.Xaml;
 
 namespace Time_App
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Page2 : ContentPage
     {
-        public MainPage()
+        public Page2()
         {
             InitializeComponent();
             BindingContext = new MainViewModels();
-        }
-
-        void Button_Clicked(object sended, System.EventArgs e)
-        {
-            Navigation.PushAsync(new Page2());
         }
     }
 }

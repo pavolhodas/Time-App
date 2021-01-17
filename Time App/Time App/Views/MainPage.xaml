@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             x:Class="Time_App.MainPage">
+             x:Class="Time_App.MainPage"
+             Title="{Binding LabelText}">
 
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label Text="{Binding LabelText}" FontSize="Title"></Label>
-        <Button Text="{Binding DateTime, StringFormat='{0:T}'}" Command="{Binding ButtonClickedCommand}" FontSize="Large"></Button>
+    <StackLayout>
+        <Label  FontSize="Title"  VerticalOptions="Center" ></Label>
+        <Button Text="{Binding DateTime, StringFormat='{0:T}'}" Command="{Binding ButtonClickedCommand}" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Start" ></Button>
+        <Button Text="Move to next page" Clicked="Button_Clicked" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand"/>
     </StackLayout>
 
 </ContentPage>
