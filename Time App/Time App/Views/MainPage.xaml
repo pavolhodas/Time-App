@@ -4,9 +4,27 @@
              x:Class="Time_App.MainPage"
              Title="{Binding LabelText}">
 
+
     <StackLayout BackgroundColor="Black">
-        <Button Text="{Binding DateTime, StringFormat='{0:T}'}" Command="{Binding ButtonClickedCommand}" FontSize="70" HorizontalOptions="Center" VerticalOptions="FillAndExpand" TextColor="Gray" BackgroundColor="Black" ></Button>
-        <Button Text="Stopky" Clicked="Button_Clicked" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand" BackgroundColor="Black" FontSize="Large" TextColor="Gray"/>
+        <Button Text="{Binding DateTime, StringFormat='{0:T}'}" Command="{Binding ButtonClickedCommand}" FontSize="70" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Gray" BackgroundColor="Black" ></Button>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions> 
+            
+            <Button Grid.Row="2" Grid.Column="0" Text="Stopky" Clicked="Button_Clicked" HorizontalOptions="End" VerticalOptions="End" BackgroundColor="Black" FontSize="Small" TextColor="Gray"/>
+            <Button Grid.Row="2" Grid.Column="1" Text="Budík" BackgroundColor="Black" TextColor="Gray"  FontSize="Small" HorizontalOptions="End" VerticalOptions="End"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="Časovač" BackgroundColor="Black" TextColor="Gray"  FontSize="Small" HorizontalOptions="End" VerticalOptions="End"/>
+            <Button Grid.Row="2" Grid.Column="3" Text="Svetový čas" BackgroundColor="Black" TextColor="Gray"  FontSize="Small" HorizontalOptions="End" VerticalOptions="End"/>
+        </Grid>
     </StackLayout>
 
 </ContentPage>

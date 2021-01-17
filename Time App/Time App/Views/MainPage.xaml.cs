@@ -16,11 +16,13 @@ namespace Time_App
         {
             InitializeComponent();
             BindingContext = new MainViewModels();
+            var grid = new Grid();
         }
 
         void Button_Clicked(object sended, System.EventArgs e)
         {
             Navigation.PushAsync(new StopkyPage());
         }
+
     }
 }
