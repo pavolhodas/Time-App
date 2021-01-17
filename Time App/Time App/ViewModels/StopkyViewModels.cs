@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,15 +8,17 @@ using Time_App.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Time_App
+namespace Time_App.ViewModels
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page2 : ContentPage
+    public partial class StopkyViewModels : ContentPage
     {
-        public Page2()
+
+        public StopkyViewModels()
         {
-            InitializeComponent();
-            BindingContext = new MainViewModels();
+
         }
+
+
+    
     }
 }

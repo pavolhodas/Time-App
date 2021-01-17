@@ -16,13 +16,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Page2.xaml.cs">
-      <DependentUpon>Page2.xaml</DependentUpon>
+    <Compile Update="ViewModels\StopkyViewModels.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\StopkyPage.xaml.cs">
+      <DependentUpon>StopkyPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Page2.xaml">
+    <EmbeddedResource Update="Views\StopkyPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

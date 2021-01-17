@@ -4,10 +4,9 @@
              x:Class="Time_App.MainPage"
              Title="{Binding LabelText}">
 
-    <StackLayout>
-        <Label  FontSize="Title"  VerticalOptions="Center" ></Label>
-        <Button Text="{Binding DateTime, StringFormat='{0:T}'}" Command="{Binding ButtonClickedCommand}" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Start" ></Button>
-        <Button Text="Move to next page" Clicked="Button_Clicked" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand"/>
+    <StackLayout BackgroundColor="Black">
+        <Button Text="{Binding DateTime, StringFormat='{0:T}'}" Command="{Binding ButtonClickedCommand}" FontSize="70" HorizontalOptions="Center" VerticalOptions="FillAndExpand" TextColor="Gray" BackgroundColor="Black" ></Button>
+        <Button Text="Stopky" Clicked="Button_Clicked" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand" BackgroundColor="Black" FontSize="Large" TextColor="Gray"/>
     </StackLayout>
 
 </ContentPage>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Time_App.StopkyPage"
+             Title="Stopky">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+            <Label x:Name="lblStopwatch" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   FontSize="50"
+                   TextColor="Gray">
+               
+            </Label>
+
+            <Button x:Name="btnStart" Clicked="btnStart_Clicked" Text="START" VerticalOptions="EndAndExpand" Background="Black" TextColor="Gray" FontSize="Large" ></Button>
+            <Button x:Name="btnStop" Text="STOP" Clicked="btnStop_Clicked" Background="Black" TextColor="Gray" FontSize="Large" ></Button>
+            <Button x:Name="btnReset" Text="RESET" Clicked="btnReset_Clicked" Background="Black" TextColor="Gray" FontSize="Large" ></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

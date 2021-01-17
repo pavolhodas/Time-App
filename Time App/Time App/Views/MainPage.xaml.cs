@@ -20,7 +20,7 @@ namespace Time_App
 
         void Button_Clicked(object sended, System.EventArgs e)
         {
-            Navigation.PushAsync(new Page2());
+            Navigation.PushAsync(new StopkyPage());
         }
     }
 }

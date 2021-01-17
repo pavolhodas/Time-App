@@ -65,6 +65,5 @@ namespace Time_App.ViewModels
             }
         }
 
-        
     }
 }
