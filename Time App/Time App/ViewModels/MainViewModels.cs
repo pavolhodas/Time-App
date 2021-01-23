@@ -31,7 +31,7 @@ namespace Time_App.ViewModels
         }
         public Command ButtonClickedCommand => new Command(() =>
         {
-            LabelText = "Sklovensko";
+            LabelText = "Slovensko";
         });
 
         public MainViewModels()

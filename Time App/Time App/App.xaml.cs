@@ -9,8 +9,8 @@ namespace Time_App
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new ShellApp();
+            //MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

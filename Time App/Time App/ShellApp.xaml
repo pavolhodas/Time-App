@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Time_App"
+       x:Class="Time_App.ShellApp">
+
+    <TabBar Shell.BackgroundColor="WhiteSmoke" Shell.TitleColor="Black">
+        <Tab Title="Budík">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+
+        <Tab Title="Svetový čas">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+
+        <Tab Title="Časovač">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+
+        <Tab Title="Stopky">
+            <ShellContent ContentTemplate="{DataTemplate local:StopkyPage}"/>
+        </Tab>
+    </TabBar>
+    
+</Shell>
