@@ -5,17 +5,17 @@
              Title="Stopky">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Black">
-            <Label x:Name="lblStopwatch" 
-                   HorizontalOptions="CenterAndExpand"
+            <Label Text="{Binding lblStopwatch}"
+                HorizontalOptions="CenterAndExpand"
                    VerticalOptions="CenterAndExpand"
                    FontSize="50"
                    TextColor="Gray">
                
             </Label>
 
-            <Button x:Name="btnStart" Clicked="btnStart_Clicked" Text="START" VerticalOptions="End" Background="Black" TextColor="Gray" FontSize="Large" ></Button>
-            <Button x:Name="btnStop" Text="STOP" Clicked="btnStop_Clicked" Background="Black" TextColor="Gray" FontSize="Large" ></Button>
-            <Button x:Name="btnReset" Text="RESET" Clicked="btnReset_Clicked" Background="Black" TextColor="Gray" FontSize="Large" ></Button>
+            <Button x:Name="btnStart" Command="{Binding btnStart_Clicked}" Text="{Binding start}" VerticalOptions="End" Background="Black" TextColor="Gray" FontSize="Large" ></Button>
+            <Button x:Name="btnStop" Text="STOP" Command="{Binding btnStop_Clicked}" Background="Black" TextColor="Gray" FontSize="Large" ></Button>
+            <Button x:Name="btnReset" Text="RESET" Command="{Binding btnReset_Clicked}" Background="Black" TextColor="Gray" FontSize="Large" ></Button>
 
         </StackLayout>
     </ContentPage.Content>
