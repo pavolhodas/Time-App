@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,16 +9,13 @@ using Xamarin.Forms.Xaml;
 
 namespace Time_App
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class AlarmPage : ContentPage
     {
-        public MainPage()
+        public AlarmPage()
         {
             InitializeComponent();
-            BindingContext = new MainViewModels();
-            var grid = new Grid();
+            BindingContext = new AlarmViewModels();
         }
-
-       
-
     }
 }
