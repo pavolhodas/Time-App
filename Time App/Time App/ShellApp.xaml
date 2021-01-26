@@ -4,7 +4,7 @@
        xmlns:local="clr-namespace:Time_App"
        x:Class="Time_App.ShellApp">
 
-    <TabBar Shell.BackgroundColor="WhiteSmoke" Shell.TitleColor="Black">
+    <TabBar Shell.BackgroundColor="Gray" Shell.TitleColor="Black">
         <Tab Title="Svetový čas">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
         </Tab>

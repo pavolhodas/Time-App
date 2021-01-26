@@ -5,7 +5,7 @@
              Title="Tvoje budíky">
     
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="Black">
             <Label Text="Welcome to your alarms"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
