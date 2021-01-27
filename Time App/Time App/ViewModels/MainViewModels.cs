@@ -11,7 +11,7 @@ using static System.Net.Mime.MediaTypeNames;
 namespace Time_App.ViewModels
 {
 
-    class MainViewModels : INotifyPropertyChanged
+    public class MainViewModels : INotifyPropertyChanged
     {
         DateTime dateTime;
 

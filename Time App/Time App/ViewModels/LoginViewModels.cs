@@ -5,7 +5,7 @@ using Time_App.ViewModels.Base;
 
 namespace Time_App.ViewModels
 {
-    public class AlarmViewModels : PageModelBase
+    public class LoginViewModels : PageModelBase
     {
     }
 }

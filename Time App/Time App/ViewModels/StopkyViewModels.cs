@@ -11,7 +11,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Time_App.ViewModels
 {
-    public partial class StopkyViewModels : INotifyPropertyChanged
+    public  class StopkyViewModels : INotifyPropertyChanged
     {
         Stopwatch stopwatch;
 

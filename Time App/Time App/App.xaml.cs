@@ -10,6 +10,7 @@ namespace Time_App
         {
             InitializeComponent();
             MainPage = new ShellApp();
+            //MainPage = new LoginPage();
             //MainPage = new NavigationPage(new MainPage());
         }
 
