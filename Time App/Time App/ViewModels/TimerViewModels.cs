@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Text;
 using System.Timers;
+using Time_App.ViewModels.Base;
 using Xamarin.Forms;
 
 namespace Time_App.ViewModels

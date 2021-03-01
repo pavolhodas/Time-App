@@ -12,11 +12,11 @@ namespace Time_App
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoginPage : ContentPage
     {
-        public LoginPage()
-        {
-            InitializeComponent();
-            BindingContext = new LoginViewModels();
-        }
+        //public LoginPage()
+        //{
+          //  InitializeComponent();
+           // BindingContext = new LoginViewModels();
+       // }
 
         void Button_Clicked(object sender, System.EventArgs e)
         {

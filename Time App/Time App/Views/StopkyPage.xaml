@@ -4,19 +4,36 @@
              x:Class="Time_App.StopkyPage"
              Title="Stopky">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Black">
+        <StackLayout BackgroundColor="White">
             <Label Text="{Binding lblStopwatch}"
                 HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="CenterAndExpand"
+                   VerticalOptions="Start"
                    FontSize="40"
                    TextColor="Gray">
-               
             </Label>
 
             <Button x:Name="btnStart" Command="{Binding btnStart_Clicked}" Text="{Binding start}" VerticalOptions="End" Background="Black" TextColor="Gray" FontSize="Large" ></Button>
             <Button x:Name="btnStop" Text="STOP" Command="{Binding btnStop_Clicked}" Background="Black" TextColor="Gray" FontSize="Large" ></Button>
             <Button x:Name="btnReset" Text="RESET" Command="{Binding btnReset_Clicked}" Background="Black" TextColor="Gray" FontSize="Large" ></Button>
+            <Button Text="LAP" Command="{Binding btnLap_Clicked}" Background="Black" TextColor="Gray" FontSize="Large"></Button>
 
+            <Label Text="{Binding lblLap1}" 
+                   TextColor="{Binding txtLap1}"
+                   FontSize="40"
+                   HorizontalOptions="CenterAndExpand">
+            </Label>
+
+            <Label Text="{Binding lblLap2}" 
+                   TextColor="{Binding txtLap2}"
+                   FontSize="40"
+                   HorizontalOptions="CenterAndExpand">
+            </Label>
+
+            <Label Text="{Binding lblLap3}" 
+                   TextColor="{Binding txtLap3}"
+                   FontSize="40"
+                   HorizontalOptions="CenterAndExpand">
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

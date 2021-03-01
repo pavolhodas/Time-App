@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 using static System.Net.Mime.MediaTypeNames;
+using Time_App.ViewModels.Base;
 
 namespace Time_App.ViewModels
 {
